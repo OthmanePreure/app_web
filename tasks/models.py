@@ -3,7 +3,7 @@ from django.db import models
 # Create your models here.
 class Collection(models.Model):
     name = models.CharField(max_length=60)
-    slug = models.SlugField(unique=True)
+    slug = models.SlugField()
 
 
 class Task(models.Model):
